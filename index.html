@@ -1,1 +1,464 @@
-...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer | Tech Blog & Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-grid"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <span class="nav-name">~/Matthew/Barker</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#bookshelf" class="nav-link">Bookshelf</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-name">Software Engineer</span>
+                    <span class="hero-subtitle">& Technology Innovator</span>
+                </h1>
+                <div class="terminal-prompt">
+                    <span class="prompt-symbol">$</span>
+                    <span class="typing-animation">whoami --verbose</span>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a Cambridge based software engineer with over a decade of experience writing clean, well-documented, and scalable code.
+                        I've worked across the stack to ship software that solves real problems in highly technical industries, from blockchain to biotech.
+                    </p>
+                    <p>
+                        Currently serving as the primary software engineer for Abselion, developing the robotics and data analytics products
+                        which are shaking up the biotech industry.
+                    </p>
+                    <div class="tech-stack">
+                        <h3>Current Tech Stack</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-filename">matt@portfolio:~/career$</span>
+                        </div>
+                        <pre class="code-content"><code><span class="property">matt@portfolio:~/career$</span> <span class="keyword">git log</span>
+<span class="class-name">commit a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0</span> <span class="param">(HEAD -> main)</span>
+<span class="keyword">Author:</span> Matt Barker &lt;matt@portfolio&gt;
+<span class="keyword">Date:</span>   Present
+
+    <span class="function">feat:</span> <span class="string">The impossible</span>
+    
+    <span class="property">- Removed roadblocks</span>
+    <span class="property">- Innovated solutions </span>
+    <span class="property">- Exceeded expectations</span>
+
+<span class="property">matt@portfolio:~/career$</span> <span class="boolean">█</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Notable Work
+            </h2>
+
+            <!-- Blockchain Subsection -->
+            <div class="work-item">
+                <div class="work-header" onclick="toggleExpand('blockchain')">
+                    <h3 class="work-title">Reinventing the Blockchain</h3>
+                    <div class="work-preview">
+                        <div class="constellation-network">
+                            <div class="network-canvas" id="network-canvas">
+                                <canvas id="network-canvas-element" width="180" height="180"></canvas>
+                            </div>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                </div>
+                <div class="work-content" id="blockchain-content">
+                    <div class="work-description">
+                        <p>
+                            By completely rethinking blockchain from the ground up we've opened the door for a De-Fi protocol that's scalable, private, and efficient.
+                            <a href="https://github.com/CaptainAdmiral/BC-Public" target="_blank" style="color: var(--accent-blue);">View on GitHub</a>
+                        </p>
+                        <h4>Technical Innovations:</h4>
+                        <ul>
+                            <li><strong>Zero Consensus:</strong> Eliminates need for a transaction consensus, instead using transitive zero-knowledge proofs and statistical methods </li>
+                            <li><strong>Linear Scalability:</strong> Network complexity grows linearly rather than exponentially with node count</li>
+                            <li><strong>Privacy-First:</strong> Transaction details remain private, preventing deanonymization through transaction history</li>
+                            <li><strong>Secure: </strong> No consensus requirement means no 51% attack</li>
+                            <li><strong>Energy Efficient:</strong> Efficient enough to simulate full-scale networks on commodity hardware, putting environmental concerns to rest </li>
+                        </ul>
+                        <h4>Energy Usage Comparison:</h4>
+                        <div class="energy-charts-grid">
+                            <div class="energy-chart-container" id="energy-chart-1">
+                                <canvas id="energy-chart-canvas-1" width="350" height="200"></canvas>
+                            </div>
+                            <div class="energy-chart-container" id="energy-chart-2">
+                                <canvas id="energy-chart-canvas-2" width="350" height="200"></canvas>
+                            </div>
+                        </div>
+                        <div class="tech-used">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Blockchain</span>
+                            <span class="tech-tag">Cryptography</span>
+                            <span class="tech-tag">Network Protocols</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Abselion Subsection -->
+            <div class="work-item">
+                <div class="work-header" onclick="toggleExpand('abselion')">
+                    <h3 class="work-title">Amperia - Biotech Automation</h3>
+                    <div class="work-preview">
+                        <div class="model-container" id="model-container">
+                            <canvas id="amperia-canvas"></canvas>
+                        </div>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                </div>
+                <div class="work-content" id="abselion-content">
+                    <div class="work-description">
+                        <p>
+                            Amperia is a cutting-edge robotics and data analytics platform that's disrupting the biotech industry by revolutionizing how protein research is conducted. 
+                            This automated system transforms traditionally labor-intensive laboratory workflows into streamlined, data-driven processes that accelerate drug discovery timelines by up to 40%. 
+                            By combining advanced robotics with real-time analytics, Amperia enables researchers to make critical decisions faster and with greater confidence than ever before.
+                            <a href="https://www.abselion.com/" target="_blank" style="color: var(--accent-blue);">Learn more about Amperia</a>
+                        </p>
+                        <p>
+                            <strong>Recognition:</strong> Amperia has been honored with the Bioprocessing Industry Association's 2023 Next-Gen Analytics award, 
+                            recognizing its groundbreaking impact on biotech innovation and data-driven research methodologies.
+                        </p>
+                        <h4>Industry Disruption:</h4>
+                        <ul>
+                            <li><strong>Workflow Revolution:</strong> Transforms manual laboratory processes into automated, consistent operations</li>
+                            <li><strong>Speed Innovation:</strong> Delivers results in minutes rather than hours, fundamentally changing research pace</li>
+                            <li><strong>Data-Driven Insights:</strong> Provides real-time analytics that enable immediate decision-making in drug development</li>
+                            <li><strong>Accessibility:</strong> Makes advanced protein analysis accessible to labs of all sizes with intuitive operation</li>
+                            <li><strong>Scalability:</strong> Parallel processing capabilities that grow with research demands</li>
+                        </ul>
+
+                        <div class="tech-used">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">InfluxDB</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Professional Details -->
+            <div class="professional-highlights">
+                <div class="highlight-grid">
+                    <div class="highlight-item">
+                        <h4>🎓 Education</h4>
+                        <p><strong>Computer Science 1st Class</strong><br>
+                        University of Essex (2021)<br>
+                        <em>Dean's List 2020-21</em></p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>🏆 Certifications</h4>
+                        <p><strong>AWS Certified Cloud Practitioner</strong><br>
+                        (2025)</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>🔬 Research Projects</h4>
+                        <p>Novel neural network architecture for fine-grained control over generative adversarial model output space</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Other Projects
+            </h2>
+            
+            <div class="projects-grid">
+                <!-- Chess Robot -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Chess Robot</h3>
+                        <div class="project-icon">♟️</div>
+                    </div>
+                    <p class="project-description">
+                        Developed software to allow a robotic arm to play chess on a physical board against human opponents. 
+                        Built the vision system from scratch using TensorFlow and a stereoscopic camera and integrated with
+                        stockfish and a 6 axis robot arm.
+                    </p>
+                    <div class="project-details">
+                        <h4>Technical Highlights:</h4>
+                        <ul>
+                            <li>Highly responsive board state recognition in arbitrary conditions</li>
+                            <li>Custom computer vision pipeline using OpenCV and TensorFlow</li>
+                            <li>Integration of strategic AI</li>
+                            <li>Precise manipulation and movement planning within adaptive constraints</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">ROS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indie Games -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Indie Game Development</h3>
+                        <div class="project-icon">🎮</div>
+                    </div>
+                    <p class="project-description">
+                        I'm extremely passionate about indie game development and have worked on
+                        a number of projects over the years, including for <a href="https://tranzfuser.com/">Tranzfuser</a>.
+                        Please check out my work below.
+                    </p>
+                    <div class="project-details">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="https://github.com/CaptainAdmiral/Platformer">Hugo's Basilisk</a>
+                                 - A physics puzzle platformer built around the use of a grappling hook</li>
+                            <li><a href="https://github.com/CaptainAdmiral/Metroidvania">shArd</a>
+                                 - A metriodvania with tight platforming mechanics built for the speedrunning community</li>
+                            <li><a href="https://github.com/CaptainAdmiral/Card-Game">Concurrence Axiom</a> - A strategic card game
+                            where turns happen simultaneously</li>
+                            <li><a href="https://github.com/CaptainAdmiral/Expanded_Enchants">Expanded Enchants</a> - A mod for the popular game "Minecraft"
+                            that overhauls the enchantment system</li>
+                        </ul>
+                    <div class="tech-used">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Godot</span>
+                        <span class="tech-tag">MonoGame</span>
+                        <span class="tech-tag">OpenGL</span>
+                        <span class="tech-tag">Shader Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bookshelf Section -->
+    <section id="bookshelf" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Bookshelf
+            </h2>
+            <div class="recommendations-grid">
+                <a href="https://codehiddenlanguage.com/" class="recommendations-link"><div class="recommendation-item" >
+                    <div class="recommendation-header">
+                        <div class="recommendation-type book">📚</div>
+                        <h3>"Code: The Hidden Language of Computer Hardware and Software"</h3>
+                        <span class="recommendation-author">by Charles Petzold</span>
+                    </div>
+                    <p class="recommendation-review">
+                        Great read, comprehensively builds your knowledge of how a cpu works from the transistor level all the way to up to the architecture.
+                        Quite entertaining and very easy to follow thanks to being highly diagrammatic.</p>
+                </div></a>
+
+                <a href="https://worrydream.com/refs/Hamming_1997_-_The_Art_of_Doing_Science_and_Engineering.pdf" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type book">📚</div>
+                        <h3>"The Art of Doing Science and Engineering"</h3>
+                        <span class="recommendation-author">by Richard W. Hamming</span>
+                    </div>
+                    <p class="recommendation-review">I've heard that this is mostly a distillation of Richard Hamming's lectures at the Naval Postgraduate School in Monterey, California,
+                        and the enthusiasm of a lecturer to speak on something they're passionate about definitely comes across in the writing style. That being said parts of the book
+                        are very dry and while there are nuggets in there that will completely change the way you approach software engineering, it's probably fine to skim over
+                        anything that tests your patience. 
+                    </p>
+                </div></a>
+
+                <a href="https://www.covertchannels.com/" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type article">📄</div>
+                        <h3>Air-Gap Research</h3>
+                        <span class="recommendation-author">Dr. Mordechai Guri</span>
+                    </div>
+                    <p class="recommendation-review">
+                        This guy might be one of the most cracked security researcher on the planet. Specializing in jumping air gapped systems,
+                        every paper on this website will make you rethink what's possible with a side channel attack.
+                    </p>
+                </div></a>
+
+                <a href="https://www.youtube.com/@szymonozog7862/videos" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type youtube">🎥</div>
+                        <h3>Simon Oz</h3>
+                        <span class="recommendation-author">YouTube Channel</span>
+                    </div>
+                    <p class="recommendation-review">Fantastic resource for learning GPU programming and architecture</p>
+                </div></a>
+
+                <a href="https://cses.fi/book/book.pdf" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type book">📚</div>
+                        <h3>"The Competitive Programmers Handbook"</h3>
+                        <span class="recommendation-author">Antti Laaksonen</span>
+                    </div>
+                    <p class="recommendation-review">
+                        If I can recommend one book to make you a better programmer it's this. While a lot of it is fairly basic, everything covered is
+                        genuinely useful and I guarantee there'll be at least one algorithm you didn't know about. The linked pdf is free please do
+                        check it out.
+                    </p>
+                </div></a>
+
+                <a href="https://www.youtube.com/@LowLevelTV" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type youtube">🎥</div>
+                        <h3>Low Level TV</h3>
+                        <span class="recommendation-author">YouTube Channel</span>
+                    </div>
+                    <p class="recommendation-review">
+                        Great resource for learning infosec and low level systems programming. Incredibly knowledgeable and can be relied on to provide
+                        a nuanced take on the latest cybersecurity news.
+                    </p>
+                </div></a>
+
+                <a href="https://www.youtube.com/@TheCodingGopher" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type youtube">🎥</div>
+                        <h3>The Coding Gopher</h3>
+                        <span class="recommendation-author">YouTube Channel</span>
+                    </div>
+                    <p class="recommendation-review">
+                        These videos are really good deep dives on technologies or computer science concepts that manage to condense a considerable depth
+                        of information on a topic into bite sized videos without sacrificing on comprehension. I get the feeling the research he does before
+                        presenting information to his audience is very thorough as it tends to cover details that other channels do not.
+                    </p>
+                </div></a>
+
+                <a href="https://www.youtube.com/@PolylogCS" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type youtube">🎥</div>
+                        <h3>Polylog</h3>
+                        <span class="recommendation-author">YouTube Channel</span>
+                    </div>
+                    <p class="recommendation-review">Really interesting channel covering a range of topics from classical computer science</p>
+                </div></a>
+
+                <a href="https://www.youtube.com/@Fireship" class="recommendations-link"><div class="recommendation-item">
+                    <div class="recommendation-header">
+                        <div class="recommendation-type youtube">🎥</div>
+                        <h3>Fireship</h3>
+                        <span class="recommendation-author">YouTube Channel</span>
+                    </div>
+                    <p class="recommendation-review">
+                        Great resource for staying up to date with the current state of the industry, covers all the
+                        latest tech news and has a great series explaining new industry standard technologies in 100 seconds.
+                    </p>
+                </div></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Let's Connect</h3>
+                    <p>Always interested in discussing new opportunities and collaborating on innovative projects.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="contact-links">
+                        <a href="mailto:mattb1197@live.co.uk" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            Email
+                        </a>
+                        <a href="https://github.com/CaptainAdmiral" class="contact-link">
+                            <span class="contact-icon">💻</span>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Matthew Barker</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
