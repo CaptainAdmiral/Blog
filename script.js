@@ -614,7 +614,7 @@ function initializeAmperiaModel() {
         // Update hover effects
         if (isHovering) {
             targetScale = 1.1;
-            currentRotationSpeed = baseRotationSpeed * 1.4;
+            currentRotationSpeed = baseRotationSpeed * 1.8;
         } else {
             targetScale = 1.0;
             currentRotationSpeed = baseRotationSpeed;
